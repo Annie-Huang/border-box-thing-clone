@@ -1,0 +1,48 @@
+body {
+  background: #efefef;
+}
+
+.sidebar {
+  margin: 5em;
+  max-width: 18em;
+}
+
+.content-snippets {
+  padding: 2rem;
+  background: white;
+
+  line-height: 1;
+
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  li {
+    border-top: 2px dotted rgb(black, 0.2);
+    padding: 1em 0;
+  }
+
+  article {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 100px 1fr;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+  }
+
+  img {
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}
