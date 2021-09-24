@@ -1,0 +1,6 @@
+Can I clone this weird border design? (https://www.youtube.com/watch?v=UDNY6NiNEB4)
+
+https://github.com/kevin-powell/border-box-thing-clone
+https://github.com/Annie-Huang/border-box-thing-clone
+
+==================================================================
