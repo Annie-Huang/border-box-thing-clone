@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "sass": "sass --watch sass:css",
+    "sass1": "node-sass -w ./sass/style.scss -o ./css/ --recursive",
+    "sass2": "node-sass src/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
