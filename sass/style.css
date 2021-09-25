@@ -442,6 +442,11 @@ body {
   transform: translateX(calc(-1 * (var(--left-offset))));
 }
 
+.title-with-border + * {
+  position: relative;
+  z-index: 2;
+}
+
 .title-with-border::before,
 .title-with-border::after {
   content: "";
