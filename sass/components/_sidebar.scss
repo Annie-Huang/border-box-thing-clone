@@ -49,9 +49,23 @@ body {
 
 .title-with-border {
   --left-offset: 1.5em;
+  position: relative;
   width: max-content; // let it grow with the content grow, the line is longer because the content also got padding left | right
   border-top: 1px solid hsl(var(--clr-accent-400));
   padding: 0.5em var(--left-offset);
 
   transform: translateX(calc(-1 * (var(--left-offset))));
+}
+
+.title-with-border::before,
+.title-with-border::after {
+  content: '';
+  position: absolute;
+}
+
+.title-with-border::before {
+  right: 0;
+  top: 0;
+  height: 1em; // this make it sort of stop in the middle of the text
+  border: 1px solid currentColor;
 }
