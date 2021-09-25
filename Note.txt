@@ -8,5 +8,8 @@ https://www.today.com/style/what-kind-filter-should-you-put-face-mask-t179037
 
 Two terminals:
 C:\react\border-box-thing-clone> npm run start
+
+// Use the default file watcher generated css file from intellij rather than running the sass command
+// Don't need to run the follow command.
 C:\react\border-box-thing-clone> npm run sass       <<< This is the comment that work, it use global isntall sass which is version: +-- sass@1.23.1
                                                         You scss need to be modified to trigger recompile.
