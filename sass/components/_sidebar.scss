@@ -49,13 +49,15 @@ body {
 
 .title-with-border {
   --left-offset: 1.5em;
+  --offset-top: 0.5em; // change to to 1em and you will see it still working
+
   position: relative;
   width: max-content; // let it grow with the content grow, the line is longer because the content also got padding left | right
   margin-bottom: -5em; // Matching A. Margin can be negative but padding must be positive..
 
   border: 1px solid hsl(var(--clr-accent-400));
   border-right: 0;
-  padding: 0.5em var(--left-offset) 5em; // Matching A
+  padding: var(--offset-top) var(--left-offset) 5em; // Matching A
 
   font-size: var(--fs-500);
   line-height: 1;
@@ -80,12 +82,12 @@ body {
 .title-with-border::before {
   right: 0;
   top: 0;
-  height: var(--fs-500);
+  height: calc(var(--fs-500) / 2 + var(--offset-top));
   width: 1px;
 }
 
 .title-with-border::after {
-  top: var(--fs-500);
+  top: calc(var(--fs-500) / 2 + var(--offset-top));
   right: 0;
   width: 0.65em;
   height: 1px;
