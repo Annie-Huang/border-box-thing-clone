@@ -51,8 +51,11 @@ body {
   --left-offset: 1.5em;
   position: relative;
   width: max-content; // let it grow with the content grow, the line is longer because the content also got padding left | right
-  border-top: 1px solid hsl(var(--clr-accent-400));
-  padding: 0.5em var(--left-offset);
+  margin-bottom: -5em; // Matching A. Margin can be negative but padding must be positive..
+
+  border: 1px solid hsl(var(--clr-accent-400));
+  border-right: 0;
+  padding: 0.5em var(--left-offset) 5em;  // Matching A
 
   transform: translateX(calc(-1 * (var(--left-offset))));
 }

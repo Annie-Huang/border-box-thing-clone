@@ -435,8 +435,10 @@ body {
   --left-offset: 1.5em;
   position: relative;
   width: max-content;
-  border-top: 1px solid hsl(var(--clr-accent-400));
-  padding: 0.5em var(--left-offset);
+  margin-bottom: -5em;
+  border: 1px solid hsl(var(--clr-accent-400));
+  border-right: 0;
+  padding: 0.5em var(--left-offset) 5em;
   transform: translateX(calc(-1 * (var(--left-offset))));
 }
 
