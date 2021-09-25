@@ -444,13 +444,14 @@ body {
 .title-with-border::after {
   content: "";
   position: absolute;
+  background-color: currentColor;
 }
 
 .title-with-border::before {
   right: 0;
   top: 0;
-  height: 1em;
-  border: 1px solid currentColor;
+  bottom: 50%;
+  width: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */
