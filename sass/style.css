@@ -454,4 +454,11 @@ body {
   width: 1px;
 }
 
+.title-with-border::after {
+  top: 50%;
+  right: 0;
+  width: 0.65em;
+  height: 1px;
+}
+
 /*# sourceMappingURL=style.css.map */
