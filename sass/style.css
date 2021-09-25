@@ -439,12 +439,10 @@ body {
   border: 1px solid hsl(var(--clr-accent-400));
   border-right: 0;
   padding: 0.5em var(--left-offset) 5em;
+  font-size: var(--fs-500);
+  line-height: 1;
+  font-style: italic;
   transform: translateX(calc(-1 * (var(--left-offset))));
-}
-
-.title-with-border + * {
-  position: relative;
-  z-index: 2;
 }
 
 .title-with-border::before,
@@ -457,12 +455,12 @@ body {
 .title-with-border::before {
   right: 0;
   top: 0;
-  bottom: 50%;
+  height: var(--fs-500);
   width: 1px;
 }
 
 .title-with-border::after {
-  top: 50%;
+  top: var(--fs-500);
   right: 0;
   width: 0.65em;
   height: 1px;
