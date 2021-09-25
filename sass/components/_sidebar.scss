@@ -66,7 +66,7 @@ body {
   transform: translateX(calc(-1 * (var(--left-offset))));
 }
 
-// Lay the content-snippets on top, don't chooose .content-snippets because we want .title-with-border to be independent
+// Lay the content-snippets on top, don't choose .content-snippets because we want .title-with-border to be independent
 .title-with-border + * {
   position: relative;
   z-index: 2;
