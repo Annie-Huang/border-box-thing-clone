@@ -46,3 +46,12 @@ body {
     grid-row: 1 / 3;
   }
 }
+
+.title-with-border {
+  --left-offset: 1.5em;
+  width: max-content; // let it grow with the content grow, the line is longer because the content also got padding left | right
+  border-top: 1px solid hsl(var(--clr-accent-400));
+  padding: 0.5em var(--left-offset);
+
+  transform: translateX(calc(-1 * (var(--left-offset))));
+}
