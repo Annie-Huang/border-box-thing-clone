@@ -68,8 +68,8 @@ body {
 
 // Lay the content-snippets on top, don't chooose .content-snippets because we want .title-with-border to be independent
 .title-with-border + * {
-  //position: relative;
-  //z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .title-with-border::before,
